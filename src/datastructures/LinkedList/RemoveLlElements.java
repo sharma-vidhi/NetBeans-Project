@@ -5,7 +5,7 @@ public class Node{
 }
 
 class Solution{
-public Node reomveElementll(int head,int value){
+public Node reomveElementll(ListNode head,int value){
   Node fakeHead=new Node(0);
   fakeHead.next=head;
   Node prev=fakeHead;
