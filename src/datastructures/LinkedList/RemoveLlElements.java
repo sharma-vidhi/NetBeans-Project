@@ -6,7 +6,7 @@ public class Node{
 
 class Solution{
 public Node reomveElementll(int head,int value){
-  Node fakeHead=null;
+  Node fakeHead=new Node(0);
   fakeHead.next=head;
   Node prev=fakeHead;
   Node curr=head;
@@ -16,8 +16,10 @@ public Node reomveElementll(int head,int value){
         prev.next=curr.next;
         
       }
+      else{prev=prev.next;}
+      
       curr=curr.next;
-      prev=prev.next;
+      
     }
     return fakeHead.next;
 }
