@@ -5,7 +5,7 @@ ListNode(int d){val=d;}
 }
 
 class Sloution{
-public ListNode (int head,int n){
+public ListNode (ListNode head,int n){
     ListNode fakeHead =new ListNode(0);
     fakeHead.next=head;
     ListNode p1=fakeHead;
